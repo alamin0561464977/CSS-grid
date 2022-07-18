@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .grid-container {
+            border: 3px solid;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            /* width: 200px; */
+            height: 200px;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #ffff;
+        }
+
+        .container {
+            border: 3px solid;
+            margin-bottom: 10px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS grid</h1>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">box 1</div>
+            <div class="grid-item">box 2</div>
+            <div class="grid-item">box 3</div>
+            <div class="grid-item">box 4</div>
+            <div class="grid-item">box 5</div>
+            <div class="grid-item">box 6</div>
+            <div class="grid-item">box 7</div>
+            <div class="grid-item">box 8</div>
+        </div>
+        <div class="container">
+            <div class="grid-item">box 1</div>
+            <div class="grid-item">box 2</div>
+            <div class="grid-item">box 3</div>
+            <!-- <div class="grid-item">box 4</div>
+            <div class="grid-item">box 5</div>
+            <div class="grid-item">box 6</div>
+            <div class="grid-item">box 7</div>
+            <div class="grid-item">box 8</div> -->
+        </div>
+    </section>
+</body>
+
+</html>
